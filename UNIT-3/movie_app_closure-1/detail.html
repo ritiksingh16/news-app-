@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="detail.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="container">
+    <div id="box1">
+      <div>
+        <img
+          src="https://imgs.search.brave.com/yIi0DEA368sH8xiwaYknAhylYVs6rd9B4SBoMCxd06Y/rs:fit:474:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5m/MEIwRm9QU0JkVXY2/dDlMd2xYVkJ3SGFI/YSZwaWQ9QXBp"
+          alt=""
+          id="option"
+        />
+        <img
+          src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg"
+          alt=""
+          id="hot"
+        />
+      </div>
+    </div>
+
+  
+
+  </div>
+
+
+
+
+
+
+
+
+  <div id="container2">
+
+    <!-- <div id="im"><img src="" id="image" alt=""></div>
+    <p id="name"></p>
+    <p id="year"></p>
+    <p id="idmb"></p>
+    <p id="type"></p> -->
+
+
+  </div>
+
+
+</body>
+
+</html>
+<script>
+
+  var data1 = JSON.parse(localStorage.getItem("details")) || []
+  
+  console.log(data1)
+  append(data1);
+ 
+
+
+  function append(data1) {
+    if (data1 === undefined) {
+      return false;
+      console.log("ok")
+    }
+    data1.map(function (elem,index) {
+      console.log(elem)
+
+      document.getElementById("container2").innerHTML=null;
+
+      let box = document.createElement("div");
+
+
+      let image = document.createElement("img");
+      image.setAttribute("id","boximg")
+      image.src = elem.Poster;
+
+      let p = document.createElement("p");
+      p.innerText = elem.Title;
+
+
+      let h4 = document.createElement("h5");
+      h4.innerText = `Year:${elem.Year}`;
+      h4.setAttribute("class", "text");
+
+      let h5 = document.createElement("h5");
+      h5.innerText = `Type:${elem.Type}`;
+      h5.setAttribute("class", "text");
+
+      let idmb = document.createElement("h5");
+      idmb.innerText = `IDMB:${elem.imdbID}`;
+      idmb.setAttribute("class", "text");
+      
+      
+      box.append(image, p, h4, h5, idmb)
+
+      document.getElementById("container2").append(box)
+
+
+    })
+
+  }
+
+
+
+
+
+
+
+</script>
+
+

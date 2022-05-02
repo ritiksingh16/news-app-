@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            
+        }
+        #container{
+            height: 500px;
+            width:400px;
+            
+            margin:auto;
+           
+
+           
+                }
+                #upper{
+                    display: flex;
+                    justify-content:space-around;
+                    padding-top: 10px;
+                    
+                    margin: auto;
+                    height: 62px;
+
+                }
+                #topbox{
+                    height: 60px;
+                    border: 1.5px solid rgb(255, 0, 0);
+                    width: 90px;
+                    background-color: rgb(19, 19, 19);
+                    border-radius: 5px;
+                    
+                }
+                #topbox2{
+                    height: 60px;
+                    border: 1.5px solid black;
+                    width: 90px;
+                    background-color: green;
+                    border-radius: 5px;
+                }
+                #upperhead{
+                    
+                    height: 15px;
+                    display: flex;
+                    justify-content: space-around;
+
+                }
+                #container > div >h4{
+                    margin-top: -1px;
+                }
+                #middlebox{
+                    
+                    border: 2px solid rgb(84, 82, 82);
+                    height: 60px;
+                    width: 150px;
+                   border-radius: 5px;
+                    background-color: rgb(160, 160, 160);
+                    margin: auto;
+                    margin-top: 20px;
+                }
+               .score{
+                   box-sizing:border-box;
+                   
+                   margin: auto;
+                    width: 50px;
+                    margin-bottom: -18px;
+                    text-align: center;
+                    font-size: 15px;
+                    padding-right: 20px;
+                    
+                  
+                    
+                }
+
+                #numbers{
+                   
+                    
+                    margin-top: 20px;
+                  justify-content: center;
+                   
+                    display: grid;
+                    grid-template-columns:repeat(3,50px);
+                    grid-template-rows:repeat(3,50px) ;
+                    gap: 20px;
+                   
+                   
+                }
+                #numbers > div{
+                    border: 1.5px solid black;
+                    border-radius: 5px;
+                }
+                .zero{
+                    height: 50px;
+                   margin-left: 70px;
+                   margin-right: -70px;
+                   color: white;
+                   background-color: purple;
+                   border-radius: 5px;
+                   
+                }
+                .enter{
+                    border: 2px solid black;
+                    width: 130px;
+                    height: 50px;
+                    margin: auto;
+                    margin-top: 10px;
+                    text-align: center;
+                    background-color: black;
+                    color: white;
+                    border-radius: 5px;
+                   
+                }
+                .one{
+                    background-color: green;
+                    border-radius: 5px;
+
+                }
+                .two{
+                    background-color: orangered;
+                    border-radius: 5px;
+
+                }
+                   
+                .three{
+                    background-color: green;
+                    border-radius: 5px;
+
+                }
+                   
+                .four{
+                    background-color: orangered;
+                    border-radius: 5px;
+
+                }
+                   
+                .five{
+                    background-color: orangered;
+                    border-radius: 5px;
+
+                }
+                   
+                .six{
+                    background-color: orangered;
+                    border-radius: 5px;
+
+                }
+                   
+                .seven{
+                    background-color: green;
+                    border-radius: 5px;
+
+                }
+                   
+                .eight{
+                    background-color: orangered;  
+                    border-radius: 5px;  
+                       
+
+                }
+                   
+                .nine{
+                    background-color: green;
+                    border-radius: 5px;
+
+                }
+
+
+
+
+                .nine:hover{
+                    background-color: rgb(34, 255, 0);
+                    
+                }
+            
+                .one:hover{
+                    background-color: aqua;
+
+                }
+                .two:hover{
+                    background-color: rgb(86, 16, 227);
+
+                }
+                   
+                .three:hover{
+                    background-color: aqua;
+
+                }
+                   
+                .four:hover{
+                    background-color: aqua;
+
+                }
+                   
+                .five:hover{
+                    background-color: aqua;
+
+                }
+                   
+                .six:hover{
+                    background-color: aqua;
+
+                }
+                   
+                .seven:hover{
+                    background-color: aqua;
+
+                }
+                   
+                .eight:hover{
+                    background-color: aqua;
+
+                }
+            .zero:hover{
+                background-color: rgb(206, 41, 69);
+                color: black;
+            }
+            .enter:hover{
+                background-color:grey;
+                color: black;
+                
+
+            }
+               
+
+    </style>
+   
+   <div id="container">
+    <div id="upper">    
+        <div id="topbox">43</div>
+        <div id="topbox2"></div>
+        
+                </div>              
+    <div id="upperhead"><h4>MIN</h4><h4>MAX</h4></div>
+         <h4 class="score">SCORE</h4>
+
+        <div id="middlebox"></div>
+
+
+        <div id="numbers">
+            
+                <div class="one" onClick="press('1');">1</div>
+                <div class="two" onClick="press('2');" >2</div>
+                <div class="three" onClick="press('3');" >3</div>
+                <div class="four" onClick="press('4');" >4</div>
+                <div class="five" onClick="press('5');" >5</div>
+                <div class="six" onClick="press('6');" >6</div>
+                <div class="seven" onClick="press('7');">7</div>
+                <div class="eight" onClick="press('8');">8</div>
+                <div class="nine" onClick="press('9');">9</div>
+                <div class="zero" onClick="press('0');">0</div>
+                
+         
+           
+        </div>
+        <div class="enter" onclick="setScore()">ENTER</div>
+
+     </div>
+    
+</body>
+</html>
+
+<script>
+    var bag = "";
+    var max = "";
+    var min = "";
+    function press(num){
+       bag= bag+num;
+       console.log(bag)ttttttt
+       document.querySelector("#middlebox").innerText = bag;
+
+    }
+    function setScore(){
+        if(max>=43){
+            max=bag;
+            document.querySelector("#topbox2").innerText = max;
+
+        
+
+            }    else if(min<=42){
+                min=bag;
+                document.querySelector("#topbox").innerText=min;
+
+           
+        }
+    }
+ 
+
+
+
+</script>
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,250px);
+            grid-template-rows:repeat(1,350px) ;
+            gap: 20px;
+            justify-content: center;
+
+        }
+        #container > div{
+
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 10px;
+ 
+        }
+        #heading{
+           
+            text-align: center;
+            font-weight: 750;
+            font-size: 25px;
+            margin-top: 10px;
+
+
+        }
+        .naam2{
+            
+            height: 250px;
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+   
+        }
+        .para{
+            font-size: 16px;
+            text-align: center;
+            margin-top: 2px;
+        }
+        .post{
+            text-align: center;
+            font-size: 13px;
+            color: rgb(89, 84, 84);
+            margin-top:-10px;
+        }
+        .logo{
+            height: 40px;
+           margin-top: -10px;
+           margin-left: 65px;
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <div id="heading"></div>
+   
+    <div id="container">
+
+
+    </div>
+    
+</body>
+</html>
+
+<script>
+  var head= document.createElement("h1").innerText="Strategic Investors"
+  document.querySelector("#heading").append(head);
+
+    var box=[{
+        name:"Vijay Shekhar Sharma",
+        image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+        post:"Founder & CEO",
+        com:"https://masai-website-images.s3.ap-south-1.amazonaws.com/paytm_rect_06df45a24f.svg"
+
+    },
+    {
+        name:"Kunal Shah",
+        image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png",
+        post:"Founder",
+        com:"https://masai-website-images.s3.ap-south-1.amazonaws.com/cred_0a47d7b4f8.png"
+
+    },
+    {
+        name:"Amrish Rau",
+        image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg",
+        post:"CEO",
+        com:"https://masai-website-images.s3.ap-south-1.amazonaws.com/pine_labs_0aa2407434.png"
+
+    },
+    {
+        name:"Sampad Swain",
+        image:"https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg",
+        post:"Co-Founder & CEO",
+        com:"https://masai-website-images.s3.ap-south-1.amazonaws.com/instamojo_8763e704f7.png"
+
+    },
+
+]
+
+   
+box.map(function(elem){
+    var div=document.createElement("div")
+    
+
+
+
+
+    var image = document.createElement("img")
+    image.setAttribute("src",elem.image)
+    image.setAttribute("class","naam2")
+   
+
+
+    var names = document.createElement("h3")
+    names.innerText=elem.name
+    names.setAttribute("class","para")
+
+    
+    var paragraph = document.createElement("p")
+    paragraph.innerText=elem.post
+    paragraph.setAttribute("class","post")
+
+    var logo = document.createElement("img")
+    logo.setAttribute("src",elem.com)
+    logo.setAttribute("class","logo")
+
+
+    div.append(image,names,paragraph,logo)
+    document.querySelector("#container").append(div);
+
+
+
+});
+
+</script>

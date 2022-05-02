@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    #menu > button{
+      padding: 5px 10px ;
+      border-radius: 5px;
+      background-color: black;
+      color: white;
+
+
+    }
+    #menu > button:hover{
+      cursor: pointer;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      
+
+    }
+    #add_product{
+      padding: 5px 10px ;
+      border-radius: 5px;
+      background-color: black;
+      color: white;
+
+    }
+    #add_product:hover{
+      cursor: pointer;
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+
+    }
+
+    #products_data{
+      display: grid;
+      grid-template-columns:repeat(5,250px);
+      grid-template-rows: auto;
+      gap: 20px;
+      justify-content: center;
+      margin: auto;
+
+    }
+    #products_data > div{
+    /* border: 2px solid red; */
+    height: 320px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+      
+    }
+    img{
+      width: 50%;
+      margin-left: 50px;
+    }
+    p{
+      padding-left: 20px;
+    }
+    h3{
+      padding-left: 20px;
+      font-size: 20px;
+    }
+
+    #products_data > div > button{
+      padding: 5px 10px ;
+      margin-left: 40px;
+      margin-top: 20px;
+    }
+  </style>
+
+  <body>
+    <div id="menu">
+     <a href="./index.html"><button id="add_product">Add Product</button></a>
+      <!--Create Add Product button here, give id as "add_product". avoid making spelling mistakes in HTML id's-->
+    </div>
+    <div id="products_data">
+      <!--append all products data here in grid format-->
+      
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/inventory.js"></script>

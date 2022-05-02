@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        #container{
+            display:grid;
+            grid-template-columns: repeat(9,1fr);
+            grid-template-rows: repeat(1,53px);
+            /* border: 2px solid red; */
+            width: 90%;
+            gap: 7px;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        #container > div{
+            /* border: 2px solid black; */
+            border-radius: 7px;
+        }
+
+        .primary{
+            background-color:rgb(2,123,254);
+            color:whitesmoke;
+            text-align: center;
+            padding: 13px 10px;
+            
+        }
+        .secondary{
+            background-color:rgb(108,117,125);
+            color:whitesmoke;
+            text-align: center;
+            padding: 13px 10px;
+        }
+        .succ{
+            background-color:rgb(40,167,69);
+            color:whitesmoke;
+            text-align: center;
+            padding: 13px 10px;
+        }
+        .danger{
+            background-color:rgb(220,52,69);
+            color:whitesmoke;
+            text-align: center;
+            padding: 13px 10px;
+        }
+        .war{
+            background-color:rgb(255,192,8);
+            color:rgb(35, 34, 34);
+            text-align: center;
+            padding: 13px 10px;
+        }
+        .info{
+            background-color:rgb(19,162,184);
+            color:rgb(254, 254, 254);
+            text-align: center;
+            padding: 13px 10px;
+        }
+        .light{
+            background-color:rgb(248,249,250);
+            color:rgb(63,67,70);
+            text-align: center;
+            padding: 13px 10px;
+        }
+        .dark{
+            background-color:rgb(52,58,64);
+            color:rgb(255, 255, 255);
+            text-align: center;
+            padding: 13px 10px;
+        }
+        .link{
+            background-color:rgb(255, 255, 255);
+            color:rgb(30,137,255);
+            text-align: center;
+            padding: 13px 10px;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <div class="primary">Primary</div>
+        <div class="secondary">Secondary</div>
+        <div class="succ">Success</div>
+        <div class="danger">Danger</div>
+        <div class="war">Warning</div>
+        <div class="info">Info</div>
+        <div class="light">Light</div>
+        <div class="dark">Dark</div>
+        <div class="link">Link</div>
+    </div>
+
+    
+</body>
+</html>

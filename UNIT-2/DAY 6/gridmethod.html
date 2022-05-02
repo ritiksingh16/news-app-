@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+         
+        }
+    #outer {
+
+       
+        width:80%;
+        height: 500px;
+        margin: auto;
+        margin-top: 100px;
+        background-color: rgb(246, 224, 240);
+        padding-top: 20px;
+        flex-wrap: wrap;
+      
+     
+
+    }
+    #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 12px;
+        flex-wrap: wrap;
+
+    }
+
+    #container > div {
+
+        height: 135px;
+        width: 90%;
+        margin: auto;
+   
+        background-color: white;
+        border-radius: 5px;
+        flex-wrap: wrap;
+
+    }
+    .para {
+        font-size: 12px;
+        width: 90%;
+        color: rgb(111, 110, 110);
+        margin-left: 20px;
+    } 
+    .things{
+        
+        height: 50px;
+        width: 96%;
+        display:flex;
+       
+        justify-content: space-between;
+        font-size:11px ;
+        margin-top: 3px;
+        margin-left: 18px;
+        flex-wrap: wrap;
+       
+        
+    }
+    #coffee{
+       
+      font-size: 22px;
+      height: 50px;
+      width: 20%;
+     
+      margin-right: 10px;
+      flex-wrap: wrap;
+
+    }
+    .rate{
+        color: rgb(209, 167, 59);
+        width: 90%;
+        font-weight: 700;
+        margin-top:15px;
+        flex-wrap: wrap;
+    }   
+</style>
+</head>
+
+<body>
+<div id="outer">
+    <div id="container">
+     <div><div class="things"><h1>Cappuccino</h1><p id="coffee" class="rate">$49</p></div><p class="para"> Usage of the Internet is becoming more common due to rapid advance. </p></div>
+     <div><div class="things"><h1>Americano</h1><p id="coffee" class="rate">$49</p></div><p class="para"> Usage of the Internet is becoming more common due to rapid advance. </p></div>
+     <div><div class="things"><h1>Espresso</h1><p id="coffee" class="rate">$49</p></div><p class="para"> Usage of the Internet is becoming more common due to rapid advance. </p></div>
+     <div><div class="things"><h1>Macchiato</h1><p id="coffee" class="rate">$49</p></div><p class="para"> Usage of the Internet is becoming more common due to rapid advance. </p></div>
+     <div><div class="things"><h1>Mocha</h1><p id="coffee" class="rate">$49</p></div><p class="para"> Usage of the Internet is becoming more common due to rapid advance. </p></div>
+     <div><div class="things"><h1>Coffee Latte</h1><p id="coffee" class="rate">$49</p></div><p class="para"> Usage of the Internet is becoming more common due to rapid advance. </p></div>
+     <div><div class="things"><h1>Piccolo Latte</h1><p id="coffee" class="rate">$49</p></div><p class="para"> Usage of the Internet is becoming more common due to rapid advance. </p></div>
+     <div><div class="things"><h1>Ristretto</h1><p id="coffee" class="rate">$49</p></div><p class="para"> Usage of the Internet is becoming more common due to rapid advance. </p></div>
+     <div><div class="things"><h1>Affogato</h1><p id="coffee" class="rate">$49</p></div><p class="para"> Usage of the Internet is becoming more common due to rapid advance. </p></div>
+
+    </div>
+
+
+
+
+  
+</div>
+
+    
+</body>
+</html>

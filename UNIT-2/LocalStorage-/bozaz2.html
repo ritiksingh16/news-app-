@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #container{
+            border: 2px solid black;
+            display: flex;
+            height: 50px;
+            width: 80%;
+            margin: auto;
+        }
+        #container > div{
+            border: 2px solid red;
+            width: 80%;
+          
+            
+        }
+        #container > div > h1{
+            color: blue;
+            margin: auto;
+        }
+
+
+
+        #container2{
+            border: 3px solid rgb(96, 13, 250);
+            display: flex;
+            height: 450px;
+            width: 80%;
+            margin: auto;
+        }
+        #container2 > div{
+            border: 2px solid red;
+            width: 80%;
+        }
+       
+     
+        .cate{
+            height: 35px;
+            width: 60%;
+            margin-top: -15px;
+            border-radius: 5px;
+            border: 2px solid gray;
+           
+           
+        }
+        .line{
+            width: 40%;
+            margin-left: 10%;
+        }
+
+        .input{
+            width: 60%;
+
+        }
+        .button1{
+            height: 40px;
+            width: 60px;
+            border-radius: 6px;
+            margin-top: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     
+        }
+        .button1:hover{
+            background-color: rgb(13, 129, 196);
+            border: 3px solid cyan;
+            color: bisque;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            
+        }
+   
+
+
+    </style>
+</head>
+<body>
+        <div id="container">
+            <div><h1>Add Product</h1></div>
+            <div><h1>Product Info</h1></div>
+        </div>
+
+
+        <hr class="line">
+        <form id="form">
+        <div id="container2">
+            <div>
+                <h3>Category</h3>
+                <select class="cate" id="category">
+                    <option id="home">Home Appliances</option>
+                    <option id="fur">Furniture</option>
+                    <option id="book">Books</option>
+                    <option id="grocery">Groceries</option>
+
+                </select>
+                <h3>Title</h3>
+
+                <input type="text" placeholder="Som New" class="cate"  id = "title">
+                <h3>Description</h3>
+
+                <textarea placeholder="Home" class="input" id="home"></textarea>
+
+                <h3>Price</h3>
+                <input type="number" placeholder="456"  class="cate" id="price">
+                <div>
+                    <input type="submit" value="Add" class="button1" ><b></b></input>
+                </div>
+            </form>
+
+            </div>
+
+
+
+            <!-- second box -->
+            <div>
+                <div id ="tbdata">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>#</td>
+                            <td>Category</td>
+                            <td>Title</td>
+                            <td>Description</td>
+                            <td>Price</td>
+                        </tr>
+                    </thead>
+                    <tbody id ="tbbody">
+
+
+                    </tbody>
+
+                </table>
+            </div>
+
+            </div>
+
+        </div>
+    
+</body>
+</html>
+<script>
+
+    document.querySelector("#form").addEventListener("submit", product)
+
+    function product(event){
+        event.preventDefault()
+
+    var category = document.getElementById("#category").value
+    var title = document.getElementById("#title").value
+    var home = document.getElementById("#des").value
+    var price = document.getElementById("#price").value
+        
+
+   
+    var things=
+        
+    {category:category,
+    title:title,
+    des:home,
+    price:price}
+
+    console.log(things)
+}
+
+
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

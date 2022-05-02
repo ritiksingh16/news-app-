@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    
+</body>
+</html>
+<script>
+
+    var data = [
+            {text:'Primary',bgcolor:'rgb(1,123,255)',color:'white'},
+            {text:'Secondary',bgcolor:'rgb(108,117,125)',color:'white'},
+            {text:'Success',bgcolor:'rgb(41,166,69)',color:'white'},
+            {text:'Danger',bgcolor:'rgb(220,52,69)',color:'white'},
+            {text:'Warning',bgcolor:'rgb(255,191,9)',color:'black'},
+            {text:'Info',bgcolor:'rgb(21,162,184)',color:'white'},
+            {text:'Light',bgcolor:'rgb(248,248,250)',color:'black'},
+            {text:'Dark',bgcolor:'rgb(52,58,63)',color:'white'},
+            {text:'Link',bgcolor:'rgb(255,255,255)',color:'blue'}
+    ]
+
+
+    data.map(function(elem){
+        var btn = document.createElement("button")
+        btn.innerText = elem.text;
+        btn.style.backgroundColor=elem.bgcolor;
+        btn.style.color=elem.color;
+        btn.style.webkitBorderRadius="5px";
+        btn.style.marginLeft="5px";
+
+        document.querySelector("body").append(btn)
+
+
+    });
+    
+
+
+
+</script>

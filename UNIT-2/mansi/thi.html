@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+       
+        .ml15 {
+  font-weight: 800;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  margin: auto;
+  color: hotpink;
+ 
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 1em;
+  margin: auto;
+  
+}
+
+.btn-grad {background-image: linear-gradient(to right, #f132a1 0%, #b89a9a  51%, #ff0e0e  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 10px rgb(107, 107, 107);
+            border-radius: 10px;
+            display: block;
+          }
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+    </style>
+</head>
+<body>
+    <h1 class="ml15">
+        <span class="word">everyday I think about you. You are my favorite person,Dimple, you are damn cute yrr... how can be a person this kind of cute.</span>
+        <span class="word" style="color:red">Whenever you smile, I totally forget all of my problems. Always be with me.</span>
+      </h1>
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <div><a href="third.html" style="text-decoration: none;"><button class="btn-grad"> Next please!</button></div>
+</body>
+</html>
+<script>
+    anime.timeline({loop: true})
+  .add({
+    targets: '.ml15 .word',
+    scale: [14,1],
+    opacity: [0,1],
+    easing: "easeOutCirc",
+    duration: 1000,
+    delay: (el, i) => 800 * i
+  }).add({
+    targets: '.ml15',
+    opacity: 0,
+    duration: 10000,
+    easing: "easeOutExpo",
+    delay: 20000
+  });
+</script>

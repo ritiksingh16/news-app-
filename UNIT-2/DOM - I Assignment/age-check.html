@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Driving Age</title>
+  </head>
+  <body>
+
+ 
+    <input type="number" placeholder="enter Age" id="age" />
+    
+  
+
+
+    
+    <button onClick="checkAge()">eligibility</button>
+    <button onclick="resetDisplay()">RESET DISPLAY</button>
+    <hr />
+    <p id="pTag"></p>
+
+    <script type="text/javascript">
+      function checkAge() {
+        var age1 =  document.getElementById("age").value
+        if(age1 > 18){
+
+         var out = document.getElementById("pTag");
+         out.innerText = "You can drive in india!";
+        }else if(age1 == 18){
+            var out = document.getElementById("pTag");
+         out.innerText = "You are just old enough drive in india!";
+
+        
+           }else{
+            var out = document.getElementById("pTag");
+         out.innerText = "You can't drive in india!";
+
+           }
+       
+      }
+      function resetDisplay(){
+        document.getElementById("age").value="";
+        document.getElementById("pTag").innerText=""
+      
+
+      }
+
+      
+    </script>
+  </body>
+</html>

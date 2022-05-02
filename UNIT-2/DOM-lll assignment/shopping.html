@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,150px);
+            grid-template-rows: repeat(1,200px);
+            gap: 10px;
+        }
+  
+        .image{
+           
+            height: 130px;
+            width: 97.5%;
+        }
+        .name{
+            font-size: 8px;
+            margin-left: 5px;
+            color: rgb(123, 122, 122);
+        }
+        .price{
+            font-size: 13px;
+            margin-left: 5px;
+            margin-top:-2px;
+
+        }
+        .discounted{
+            text-decoration: line-through;
+            font-size: 10px;
+            margin-left: 70px;
+            margin-top: -32.3px;
+            color: rgb(152, 151, 151);
+        }
+      
+      
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+    
+
+
+    
+</body>
+</html>
+<script>
+    var data = [
+    {
+        imgUrl:"https://preview.colorlib.com/theme/eiser/img/product/inspired-product/xi1.jpg.pagespeed.ic.mkSk-Af1ka.webp",
+        name:"LATEST MEN’S SNEAKER",
+        price:"$25.00",
+        strikedOffPrice:"$95.00"
+    },{
+        imgUrl:"https://preview.colorlib.com/theme/eiser/img/product/inspired-product/xi2.jpg.pagespeed.ic.uBrpABaJqp.webp",
+        name:"LATEST MEN’S SNEAKER",
+        price:"$35.00",
+        strikedOffPrice:"$100.00"
+    },{
+        imgUrl:"https://preview.colorlib.com/theme/eiser/img/product/inspired-product/xi3.jpg.pagespeed.ic.iO_cFEPy2K.webp",
+        name:"LATEST MEN’S SNEAKER",
+        price:"$35.00",
+        strikedOffPrice:"$100.00"
+    },
+    {
+        imgUrl:"https://preview.colorlib.com/theme/eiser/img/product/inspired-product/xi4.jpg.pagespeed.ic.kmiQW8I5wx.webp",
+        name:"LATEST MEN’S SNEAKER",
+        price:"$35.00",
+        strikedOffPrice:"$100.00"
+    }
+]
+
+data.map(function(elem){
+
+var box1 = document.createElement("div")
+
+
+var image=document.createElement("img")
+image.setAttribute("src",elem.imgUrl)
+image.setAttribute("class","image")
+
+
+var name = document.createElement("p")
+name.innerText=elem.name;
+name.setAttribute("class","name")
+
+var price = document.createElement("h4")
+price.innerText=elem.price
+price.setAttribute("class","price")
+
+
+var dis = document.createElement("h4")
+dis.innerText=elem.strikedOffPrice
+dis.setAttribute("class","discounted")
+
+
+
+
+
+box1.append(image,name,price,dis)
+document.querySelector("#container").append(box1)
+
+
+});
+
+</script>

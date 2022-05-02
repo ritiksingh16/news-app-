@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>price</title>
+    <a href="https://nifty-franklin-f63bf7.netlify.app/"></a>
+    <style>
+        *{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+
+        #container{
+            display: grid;
+            grid-template-columns: repeat(3,190px) ;
+            grid-template-rows:200px 280px;
+           
+            margin: auto;
+            justify-content: center;
+            gap: 15px;
+            grid-template-areas: 
+             "a a a"
+             "b c d"
+            ;
+        }
+        #container > div:nth-child(1){
+            grid-area: a;
+            width: 75%;
+            margin: auto;
+            margin-top: 35px;
+        }
+        #container > div:nth-child(2){
+            grid-area: b;
+           
+          
+        }
+        #container > div:nth-child(3){
+            grid-area: c;
+           
+        }
+        #container > div:nth-child(4){
+            grid-area: d;
+           
+        }
+        .heading{
+            font-size: 30px;
+        }
+        .para{
+            font-size: 11px;
+         
+          color: rgb(97, 96, 96);
+
+        }
+        .starter{
+            font-size: 15px;
+            
+            
+        }
+        .free{
+            color:rgb(46, 177, 88) ;
+
+        }
+        .fre{
+            color:rgb(228, 120, 24);
+
+        }
+        .fr{
+            color:rgb(59, 140, 240) ;
+
+        }
+        .month{
+            font-size: 12px;
+            margin-top: -16px;
+            
+
+        }
+        .space{
+            font-size: 11px;
+         
+          color: rgb(97, 96, 96);
+          margin-top: 35px;
+        }
+        .start{
+            font-size: 13px;
+            padding:12px 40px;
+            margin-top: 10px;
+            color: rgb(49, 122, 160);
+            font-weight: 600;
+            border: 1px solid rgb(49, 122, 160);
+            background-color: white;
+            border-radius: 5px;
+        
+        } 
+        .start:hover{
+            color: white;
+            border: 1px solid rgb(49, 122, 160);
+            background-color:rgb(49, 122, 160);
+           cursor:pointer;
+           transition: all 0.1 ease;
+        
+        }
+        @media all and (min-width:400px) and (max-width: 773px){
+            #container{
+                grid-template-columns:repeat(2,200px);
+                grid-template-rows:repeat(2,280px);
+             
+            grid-template-areas: 
+            "a a"
+            "b c"
+            "d 0"
+             ;
+            }
+        }
+        
+        @media all and (min-width:50px) and (max-width:399px){
+            #container{
+                grid-template-columns:repeat(1,95%);
+                grid-template-rows: 280px 280px 280px ;
+
+            grid-template-areas: 
+            "a"
+            "b"
+            "c" 
+            "d"
+            ;
+        }
+        .heading{
+            font-size: 25px;
+        }
+        #container > div:nth-child(1){
+            grid-area: a;
+            width: 75%;
+            margin: auto;
+            margin-top: 100px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <h1 class="heading">Choose a plan that right for your business</h1>
+            <p class="para">We collect reviews from our users can so you can get an honest opinion of what an experience with our website are really like! </p>
+            </div>
+            <div><h3 class="starter">Starter Plan</h3><h2 class="free" >Free</h2><p class="month" ><i>Per month</i></p>
+            <p class="space">We collect reviews from our users can so you can get an honest opinion of what an experience with our website.</p>
+            <button class="start">Start</button>
+            </div>
+            <div><h3 class="starter">Business Plan </h3><h2 class="fre" >$39.00</h2><p class="month" ><i>Per month</i></p>    <p class="space">We collect reviews from our users can so you can get an honest opinion of what an experience with our website.</p>
+            <button class="start">Start</button>
+            </div>
+            <div><h3 class="starter">Premium Plan</h3><h2 class="fr" >$59.00</h2><p class="month" ><i>Per month</i></p>    <p class="space">We collect reviews from our users can so you can get an honest opinion of what an experience with our website.</p>
+            <button class="start">Start</button>  
+            </div>
+    </div>
+    
+</body>
+</html>

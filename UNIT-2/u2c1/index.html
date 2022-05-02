@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U2C1</title>
+    <style>
+      h1{
+        text-align: center;
+        color:rgb(199,138,52) ;
+        font-size: 60px;
+        
+      }
+      .des{
+        margin: auto;
+        text-align: center;
+        width: 47%;
+        /* border: 2px solid blue; */
+        margin-top: -25px;
+        line-height: 25px;
+        
+        
+      }
+      #container{
+        display: flex;
+        /* border: 2px solid red; */
+        width: 940px;
+        margin:auto;
+        margin-top: 35px;
+        gap: 13px;
+      }
+      #container > div{
+        /* border: 2px solid black; */
+        height: 280px;
+        width: 410px;
+        margin: auto;
+        /* box-sizing: border-box; */
+      }
+
+     h2{
+       text-align: center;
+       font-weight:900;
+
+     }
+     .para{
+       text-align: center;
+       font-size: 14px;
+       margin-top: -2px;
+       color:rgb(192, 144, 76) ;
+     }
+     .over{
+        overflow: hidden;
+        border-radius: 10px;
+        
+      }
+     .image{
+       /* width: auto; */
+       height: 218px;
+       border-radius: 10px;
+       transform: scale(0.5.1);
+       transition: transform 0.5s, opacity 0.5s;
+       overflow: hidden;
+      
+     }
+     .image:hover{
+   
+         transform: scale(1.10);
+        -ms-zoom-animation: default;
+         box-sizing: border-box;
+         vertical-align: middle;
+         overflow: hidden;
+   
+}
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- Heading section -->
+    <h1>Rooms & Suits</h1>
+    <!-- Don't change class and Id names -->
+    <p class="des">
+      Far far away, behind the word mountains, far from the countries Vokalia
+      and Consonantia, there live the blind texts. Separated they live in
+      Bookmarksgrove right at the coast of the Semantics, a large language
+      ocean.
+    </p>
+    <!-- cards section -->
+    <!-- Don't change class and Id names -->
+
+    <div id="container">
+      <div class="card">
+        <div>
+          <div class="over">
+            <img class="image" src="https://preview.colorlib.com/theme/sogo/images/ximg_1.jpg.pagespeed.ic.sI14MfHd8f.webp" alt="">
+          </div>
+         
+            <h2>Single Room</h2>
+            <p class="para">90$/PER NIGHT</p>
+        </div>
+        
+      </div>
+      <div class="card">
+        <div class="over">
+          <img class="image"  src="https://preview.colorlib.com/theme/sogo/images/ximg_2.jpg.pagespeed.ic.Y_xvNxfEhu.webp" alt="">
+        </div>
+        
+        <h2>Family Room</h2>
+        <p class="para">120$/PER NIGHT</p>
+      </div>
+      <div  class="card">
+        <div class="over">
+          <img class="image"  src="https://preview.colorlib.com/theme/sogo/images/ximg_3.jpg.pagespeed.ic.mYPnC0rXDl.webp" alt="">
+        </div>
+      
+        <div>
+          <h2>Presidential Room</h2>
+          <p class="para">250$/PER NIGHT</p>
+
+        </div>
+       
+      </div>
+    </div>
+  </body>
+</html>

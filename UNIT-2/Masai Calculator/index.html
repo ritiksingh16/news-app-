@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sec.js">
+    <title>Masai Calculator</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 60px;
+        color: teal;
+      }
+      #calculator{
+        height: 500px;
+        width: 350px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        margin: auto;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+       
+      }
+      #keyboard{
+        display: grid;
+        grid-template-columns: repeat(4,60px);
+        grid-template-rows:repeat(4,60px);
+        /* border: 2px solid red; */
+        gap: 10px;
+        margin-top: 40px;
+        justify-content: center;
+        
+        
+      }
+      #keyboard > div{
+        /* border: 2px solid rgb(0, 0, 0); */
+        border-radius: 10px;
+       
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+
+      }
+      #input{
+          width: 250px;
+          border: 1px solid rgb(255, 255, 255);
+          height:60px;
+          margin: auto;
+          margin-top: 40px;
+          border-radius: 10px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          font-size: 35px;
+          padding-right: 15px;
+          text-align: right;
+          overflow:hidden;  
+          font-family:cursive ;
+          background: -webkit-linear-gradient(rgb(2, 2, 2), rgb(255, 255, 255));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+      }
+   
+      .black{
+        background-color: rgb(0, 0, 0);
+        color: antiquewhite;
+      }
+      h3{
+        text-align: center;
+        
+      }
+      .red{
+        background-color: red;
+        color: antiquewhite;
+      }
+      .bu{
+        border: 2px solid white;
+        text-align: center;
+        width: 60px;
+        border-radius: 10px;
+        height: 60px;
+        background-color: white;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      .bu:hover{
+        border: 2px solid rgb(255, 255, 255);
+        text-align: center;
+        color: rgb(255, 255, 255);
+        width: 60px;
+        border-radius: 10px;
+        height: 60px;
+        background-color: rgb(0, 0, 0);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      .bu2{
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        color: white;
+        width: 60px;
+        border-radius: 10px;
+        height: 60px;
+        background-color: rgb(0, 0, 0);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      .bu2:hover{
+        border: 2px solid rgb(0, 0, 0);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        width: 60px;
+        border-radius: 10px;
+        height: 60px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      .bu3{
+        border: 2px solid rgb(230, 18, 18);
+        text-align: center;
+        color: white;
+        width: 60px;
+        border-radius: 10px;
+        height: 60px;
+        background-color: rgb(226, 26, 26);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      .bu3:hover{
+        border: 2px solid rgb(255, 255, 255);
+        text-align: center;
+        color: rgb(255, 0, 0);
+        width: 60px;
+        border-radius: 10px;
+        height: 60px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+  
+      .b3{
+        text-align: center;
+        /* padding-top:10px; */
+        
+      }
+      #mode{
+        border: 1px solid rgb(201, 171, 171);
+        text-align: center;
+        color: rgb(160, 124, 124);
+        width: 60px;
+        border-radius: 10px;
+        height: 60px;
+        background-color: rgb(0, 0, 0);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      #mode:hover{
+        font-size: 18px;
+        color: whitesmoke;
+        
+      }
+      #mode1{
+        border: 1px solid rgb(0, 0, 0);
+        text-align: center;
+        color: rgb(0, 0, 0);
+        width: 60px;
+        border-radius: 10px;
+        height: 60px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgba(88, 87, 87, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      #mode1:hover{
+        font-size: 15px;
+      }
+
+
+   
+
+
+      /* use grid to acheive the layout */
+    </style>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div id="calculator">
+      <div class="y" id="input" >
+      
+       <!-- <div id="screen"></div>
+        <div><button class="sec" onclick="oneClear()"><h2 class="b3">C</h2></button></div> -->
+      </div>
+   
+      
+      
+      <div id="keyboard">
+          <div><button class="bu" onclick="press('1')"><h3>1</h3></button></div>
+          <div><button class="bu" onclick="press('2')"><h3>2</h3></button></div>
+          <div><button class="bu" onclick="press('3')"><h3>3</h3></button></div>
+          <div><button id="r" class="bu2" onclick="press('+')"><h3>+</h3></button></div>
+          <div><button class="bu" onclick="press('4')"><h3>4</h3></button></div>
+          <div><button class="bu" onclick="press('5')"><h3>5</h3></button></div>
+          <div><button class="bu" onclick="press('6')"><h3>6</h3></button></div>
+          <div><button id="e" class="bu2" onclick="press('-')"><h3>-</h3></button></div>
+          <div><button class="bu" onclick="press('7')"><h3>7</h3></button></div>
+          <div><button class="bu" onclick="press('8')"><h3>8</h3></button></div>
+          <div><button class="bu" onclick="press('9')"><h3>9</h3></button></div>
+          <div><button id="w" class="bu2" onclick="press('*')"><h3>x</h3></button></div>
+          <div><button id="t" class="bu3" onclick="allClear()"><h3>C</h3></button></div>
+          <div><button class="bu" onclick="press('0')"><h3>0</h3></button></div>
+          <div><button id="run" class="bu2" onclick="compute('=')"><h3>=</h3></button></div>
+          <div><button  id="q" class="bu2" onclick="press('/')"><h3>/</h3></button></div>
+          <div><button id="mode" onclick="dark()">Dark Mode</button></div>
+          <div><button id="mode1" onclick="white()">Normal Mode</button></div>
+      </div>
+    </div>
+  
+  </body>
+</html>
+<script>
+  var bag = "";
+function press(num){
+    bag=bag+num;
+    document.getElementById("input").innerText=bag;
+}
+
+function compute(){
+  var x = document.getElementById("input").innerText
+  var y = eval(x);
+  document.getElementById("input").innerText=y;
+}
+function allClear(){
+document.getElementById("input").innerText="";
+bag="";
+}
+
+function dark(){
+  document.getElementById("calculator").style.backgroundColor="black"
+  var x = document.getElementById("run").style.backgroundColor="grey"
+  var q = document.getElementById("q").style.backgroundColor="grey"
+  var w = document.getElementById("w").style.backgroundColor="grey"
+  var e = document.getElementById("e").style.backgroundColor="grey"
+  var r = document.getElementById("r").style.backgroundColor="grey"
+  var t = document.getElementById("t").style.backgroundColor="rgb(16, 150, 38)"
+  var t = document.getElementById("t").style.border="green"
+
+
+
+  
+
+}
+function white(){
+  document.getElementById("calculator").style.backgroundColor="white"
+  x = document.getElementById("run").style.backgroundColor=""
+  q = document.getElementById("q").style.backgroundColor=""
+  w = document.getElementById("w").style.backgroundColor=""
+  e = document.getElementById("e").style.backgroundColor=""
+  r = document.getElementById("r").style.backgroundColor=""
+  t = document.getElementById("t").style.backgroundColor=""
+  t = document.getElementById("t").style.border=""
+
+}
+
+
+
+</script>
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.lordicon.com/lusqsztk.js"></script>
+
+    <title>Document</title>
+    <style>
+      
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: repeat(3, 100px);
+           
+            width:80%;
+           gap: 20px;
+            margin: auto;
+            justify-content: center;
+            margin-top:100px;
+        
+        }
+        .container > div{
+            
+          background-color: teal;
+          border-radius: 5px;
+        
+        }
+       
+        .b{
+            
+            grid-area: 1/2/2/4;
+        }
+    
+        .d{
+            
+            grid-area:2/1/3/3;
+        }
+        .i{
+           
+            grid-area: 3/3/4/5;
+        }
+   
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="a">
+        <lord-icon class="ad"
+        src="https://cdn.lordicon.com/ememvspi.json"
+        trigger="loop"
+
+        style="width:50px;height:50px">
+    </lord-icon>
+    </div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    <div class="e"></div>
+    <div class="f"></div>
+    <div class="g"></div>
+    <div class="h"></div>
+    <div class="i"></div>
+    
+
+
+</div>
+    
+</body>
+</html>

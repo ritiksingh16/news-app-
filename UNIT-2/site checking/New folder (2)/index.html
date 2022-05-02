@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+
+        #outerbox {
+            height: 560px;
+            width: 600px;
+
+            margin: auto;
+            display: flex;
+        }
+
+        #sec {
+            height: 100%;
+            width: 50%;
+
+
+        }
+
+        #third {
+            height: 450px;
+            width: 100%;
+
+            margin-top: 70px;
+            display: flex;
+
+
+
+        }
+
+        #opthird {
+            height: 380px;
+            width: 100%;
+
+            margin-top: 85px;
+            display: flex;
+            background-color: black;
+            margin-left: 60px;
+
+        }
+
+
+        #fourth {
+            height: 100px;
+            width: 275px;
+
+
+        }
+
+        .marg {
+            margin-top: 10px;
+
+        }
+
+        .marg1 {
+            margin-top: 2px;
+            margin-left: -2px;
+
+        }
+
+        .marg2 {
+
+            margin-top: -20px;
+            margin-left: 1px;
+            background-color: black;
+
+        }
+
+        #lastbox {
+            height: 40px;
+            width: 210px;
+            margin-left: 20px;
+            margin-top: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .name {
+            margin-left: 20px;
+        }
+
+        #input {
+            width: 200px;
+            height: 30px;
+            margin-top: 10px;
+            display: flex;
+        }
+
+        .mobile {
+            color: red;
+            margin-left: 20px;
+        }
+
+        .reg {
+            text-align: center;
+            padding-top: 8px;
+
+
+        }
+
+
+        /* --------------------------- */
+
+        #bgbox {
+            height: 150px;
+            width: 100%;
+
+        }
+
+        #bgsec {
+            height: 100px;
+            width: 100%;
+
+            margin-top: -20px;
+
+
+        }
+
+        .ssec {
+            margin-top: 52%;
+        }
+
+
+
+        #bgthird {
+            height: 150px;
+            width: 100%;
+
+            margin-top: 20px;
+        }
+
+        .sthird {
+            margin-top: 125px;
+        }
+
+        .color {
+            color: white;
+            padding-left: 20px;
+            margin-top: 50px;
+
+        }
+
+        #sizeone {
+            font-size: 50px;
+            margin-top: -10px;
+        }
+
+        .email {
+            color: white;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+
+        .emailsec {
+            color: white;
+            margin-left: 20px;
+            margin-top: -15px;
+
+        }
+
+        #number {
+            font-size: 22px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="outerbox">
+            <div id="sec">
+                <div id="third">
+                    <div id="fourth">
+                        <p class="name">NAME<input id="input" type="text"></p>
+
+                        <div id="fourth" class="marg">
+                            <p class="name">EMAIL<input id="input" type="text"></p>
+                            <div id="fourth" class="marg1">
+                                <p class="name"> MOBILE<input id="input" type="text">
+                                <p class="mobile">Enter a valid mobile</p>
+                                </p>
+                                <div id="lastbox" class="marg2">
+                                    <p class="reg">REGISTER</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div id="sec">
+                <div id="opthird">
+                    <div id="bgbox">
+                        <p class="color">NAME</p>
+                        <p class="color" id="sizeone">MASAI</p>
+                        <div id="bgsec" class="ssec">
+                            <p class="email">EMAIL</p>
+                            <p class="emailsec">email@masaischool.com</p>
+                            <div id="bgthird" class="sthird">
+                                <p class="email">MOBILE
+                                <p class="emailsec" id="number">9876543210</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

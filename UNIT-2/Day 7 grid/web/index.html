@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #container{
+            display: grid;
+            grid-template-columns:repeat(3,250px);
+            grid-template-rows:280px;
+            
+          
+            justify-content: center;
+            margin: auto;
+            gap: 20px;
+            
+            grid-template-areas: 
+            "a b c "
+             ;
+
+
+        }
+    
+       
+        #container > div:nth-child(1){
+            grid-area: a;
+           
+           
+           
+        }
+        #container > div:nth-child(2){
+            grid-area: b;
+            
+            
+        }
+        #container > div:nth-child(3){
+            grid-area: c;
+           
+            
+        }
+        .img{
+            width: 100%;
+            height: 150px;
+        }
+
+        .lines{
+            font-size: 11px;
+            margin-top:1px;
+        }
+        
+        .para{
+            font-size: 8px;
+            margin-top:-15px;
+                    }
+        .para2{
+            font-size: 8px;
+            margin-top:1px;
+
+        }
+   
+
+
+        @media all and (min-width:400px) and (max-width: 773px){
+            #container{
+                grid-template-columns:repeat(2,250px);
+                grid-template-rows:repeat(2,280px);
+              
+            grid-template-areas: 
+            "a b"
+            "c 0"
+             ;
+
+
+            }
+        }
+        
+        @media all and (min-width:50px) and (max-width:399px){
+            #container{
+                grid-template-columns:repeat(1,250px);
+                grid-template-rows: 280px 280px 280px ;
+            grid-template-areas: 
+            "a"
+            "b"
+            "c" 
+            
+            ;
+        }
+      
+    }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div><img class="img" src ="https://media.istockphoto.com/vectors/retro-background-with-design-and-text-black-friday-vector-id1182291402?k=20&m=1182291402&s=612x612&w=0&h=TLfEyGd1uoUwaNbC52BvD3x_nCgkoSk-vXrWL8Y7vm0=">
+        <h6 class="lines" ><a href="https://www.google.com/search?q=black+market&oq=black+market&aqs=chrome..69i57j0i512l3j0i433i512j69i60l3.5113j0j7&sourceid=chrome&ie=UTF-8;" style="color:gray;"  >Black Friday Guide: Best Sales & Discount Codes.</a></h6>
+       <p class="para">By <b>Nancy Ward</b> on <b>July 22,2017</b></p>
+        <p class="para2">You can find image details on Google Search when the image owner provides it. Image details might include image credits, copyrights, and license details.</p>
+        
+        </div>
+
+
+        <div><img class="img" src ="https://thumbs.dreamstime.com/b/white-sneakers-girl-legs-blue-jeans-white-sneakers-female-legs-blue-jeans-asphalt-green-plant-background-149397474.jpg">
+            <h6 class="lines"><a href="https://www.google.com/search?q=black+market&oq=black+market&aqs=chrome..69i57j0i512l3j0i433i512j69i60l3.5113j0j7&sourceid=chrome&ie=UTF-8;" style="color:gray;"  >The White Sneakers Nearly Every Fashion Girls Own</a></h6>
+           <p class="para">By <b>Nancy Ward</b> on <b>July 18,2017</b></p>
+            <p class="para2">You can find image details on Google Search when the image owner provides it. Image details might include image credits, copyrights, and license details.</p>
+            
+            </div>
+
+
+
+
+            <div><img class="img" src ="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/300px-New_york_times_square-terabass.jpg">
+                <h6 class="lines"><a href="https://www.nytimes.com/international/" style="color:gray;"  >New York SS 2018 Street Style:Annina Mislin</h6></a>
+               <p class="para">By <b>Nancy Ward</b> on <b>July 22,2017</b></p>
+                <p class="para2">You can find image details on Google Search when the image owner provides it. Image details might include image credits, copyrights, and license details.</p>
+                
+                </div>
+       
+
+    </div>
+</body>
+</html>

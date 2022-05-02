@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>marriage age vallidator</title>
+  </head>
+  <body>
+
+    <select name="gender" id="gender1">
+      <option value="male">M</option>
+      <option value="female">F</option>
+    </select>
+    <input type="number" placeholder="enter year of birth" id="age" />
+    <H3 >Marriage Age</H3>
+  
+
+
+    <hr />
+    <button onclick="checkAge()">submit</button>
+
+    <script type="text/javascript">
+      function checkAge() {
+        var age1 =  document.getElementById("age").value
+        if(2022-age1 > 21){
+
+          alert("ok you are elligible")
+
+          
+        }else{
+          alert("Not elligible")
+
+        }
+       }
+      
+    </script>
+  </body>
+</html>
